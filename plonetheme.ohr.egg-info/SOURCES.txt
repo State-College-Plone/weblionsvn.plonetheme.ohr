@@ -1,7 +1,12 @@
 MANIFEST.in
 README.txt
+plonetheme.ohr-configure.zcml
 setup.cfg
 setup.py
+docs/HISTORY.txt
+docs/INSTALL.txt
+docs/LICENSE.GPL
+docs/LICENSE.txt
 plonetheme/__init__.py
 plonetheme.ohr.egg-info/PKG-INFO
 plonetheme.ohr.egg-info/SOURCES.txt
