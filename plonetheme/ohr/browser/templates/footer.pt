@@ -1,0 +1,33 @@
+<div id="portal-footer" metal:define-macro="portal_footer">
+<p style="color: yellow; font-size: 22px;"> &darr; These need real links(hrefs) yet &darr;</p>
+
+<a href="" tal:attributes="href context/front-page/absolute_url">Dual Career Program</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Employee Benefits</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Employee Relations</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Health Matters</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Human Resources Development Center</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Discounts</a> <br />
+<a href="" tal:attributes="href context/front-page/absolute_url">International Scholars &amp; Faulty Visa Services</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Management Engineering</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Occupational Medicine</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Work/Life Programs</a> <br />
+<a href="" tal:attributes="href context/front-page/absolute_url">Workers Compensation</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">Staff Advisory Council</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">PSU JOBS</a> |
+<a href="" tal:attributes="href context/front-page/absolute_url">ESSIC</a> 
+
+<div id="legalstuff">
+<a href="http://www.psu.edu/ur/legal.html" title="Official statements on privacy, nondiscrimination, equal opportunity and copyright.">Privacy and Legal Statements</a> | <a href="" tal:attributes="href context/contact-info/absolute_url">Contact</a>  <tal:comment tal:condition="nothing">If there is no webmaster email address don't show</tal:comment>
+   <span tal:define="mailt  context/email_from_address"
+             tal:condition="context/email_from_address">
+  | Contact the <a tal:attributes="href string:mailto:${mailt}"  
+            title="Contact the web administrator" 
+            tal:content="context/email_from_name">webmaster</a> | 
+  </span>
+
+    <br />
+<p><a href="http://www.psu.edu/" title="Penn State home page.">The Pennsylvania State University</a> Copyright &copy;<span tal:omit-tag="" tal:define="now modules/DateTime/DateTime" tal:content="now/year" /> All Rights Reserved </p>
+
+<a href="http://weblion.psu.edu" class="colophonIcon colophonIconWebLion" title="This Plone site was built in partnership with the WebLion Project at Pennsylvania State University. Click for more information."><img src="" tal:replace="structure context/weblion_partner.png/tag" /></a>
+</div>
+</div>

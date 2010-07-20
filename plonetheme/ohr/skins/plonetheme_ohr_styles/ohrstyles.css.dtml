@@ -1,5 +1,136 @@
 /* <dtml-with base_properties> (do not remove this :) */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
 
+body {
+    background-color: #F2F2F3;
+}
 
+#portal-header, #portal-columns, #portal-personaltools-wrapper, #portal-globalnav ul  {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a#unit-logo {
+    border: none;
+    position: absolute;
+    top: 30px;
+    margin-left: 218px;
+    height: 89px;
+    width: 316px;
+}
+
+div#portal-header h2 a {
+    color: white !important;
+}
+
+#portal-logo img {
+margin:1em 0 6em 2em;
+}
+
+#portal-searchbox {
+    background-color: #5F5FB5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#portal-personaltools {
+    background-color: transparent;
+    border: none;
+    }
+    
+#portal-personaltools li a {
+    color: white;
+}    
+
+#portal-columns {
+    box-shadow:inset 0 0 10px #888;
+   -moz-box-shadow:inset 0 0 10px #888;
+   -webkit-box-shadow:inset 0 0 10px #888;
+   background-color: white;
+   padding-bottom: 25px;
+   margin-top: 5px;
+}
+
+#portal-top, #portal-footer {
+    width: 100%;
+    background-color: #000089; /* fallback color */
+    background-image: url(); /* fallback image */
+   /* background image can have either linear or radial */
+    background-image: -moz-linear-gradient(100% 100% 90deg, #232399, #000089);
+    background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#232399), to(#000089));
+    
+}
+
+#portal-globalnav {
+    border: 1px solid #b9bbbe;
+    height: 42px;
+    padding: 0px;
+    -o-box-shadow: 0 3px 6px rgba(58,58,58,.7);
+    -moz-box-shadow: 0 3px 10px rgba(58,58,58,.7);
+    -webkit-box-shadow: 0 3px 6px rgba(58,58,58,.7);
+    box-shadow: 0 3px 6px rgba(58,58,58,.7);
+    background: #FFFEFE;
+    background-image: url(globalnavbg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFEFE), to(#C2C2CA));
+	background: -moz-linear-gradient(top,  #FFFEFE,  #C2C2CA);
+}
+
+#portal-globalnav ul {
+    margin-top: 13px;
+}
+
+
+#portal-globalnav li a {
+    background: #FFFEFE;
+    background-image: url(globalnavbg.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFEFE), to(#C2C2CA));
+	background: -moz-linear-gradient(top,  #FFFEFE,  #C2C2CA);
+    font-weight: bold;
+    text-align: center;
+    color: #383838;
+    text-shadow: #fff 1px 1px 1px;
+    text-transform: capitalize;
+    padding:15px 7em;
+    border: none;
+    border-right:1px solid #222;
+    margin: 0px;
+    margin-right: -3px;  /* not sure why i need this.. weird spacing in the tabs */
+}
+
+#portal-globalnav li:first-child a:first-child {
+   border-left:1px solid #222; 
+}
+
+#portal-globalnav li a:hover, #portal-globalnav li.selected a:hover, #portal-globalnav li.selected a, #portal-globalnav a:focus {
+    background: #909090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#545454));
+	background: -moz-linear-gradient(top,  #909090,  #545454);
+    color: #FFF;
+    text-shadow: #242424 1px 1px 1px;
+    border: none;
+    border-right:1px solid #222;
+}
+#portal-breadcrumbs {
+    border: none;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+#portal-breadcrumbs a {
+    color: #898989;
+}
+
+#portal-footer {
+    border: none;
+    border-top: 8px solid #898989;
+    color: white;
+    margin-top: -2px;
+}
+
+#portal-footer a, #portal-footer a:visited {
+    color: white;
+}
 /* </dtml-with> */

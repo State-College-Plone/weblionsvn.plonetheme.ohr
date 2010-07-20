@@ -26,5 +26,52 @@
         directory="stylesheets"
         layer=".interfaces.IThemeSpecific"
         />
+        
+  <!-- site actions -->
+  <browser:viewlet
+      name="plonetheme.ohr.site_actions"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.SiteActionsViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View" 
+      />
+      
+<!-- Custom personal bar viewlet -->
+    <browser:viewlet
+        name="plonetheme.ohr.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.PersonalBarViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+    />
+
+    <browser:viewlet
+        name="plonetheme.ohr.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+        template="templates/global_sections.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+    />
+        
+     <!-- The customized footer -->
+    <browser:viewlet
+        name="plonetheme.ohr.footer"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class=".viewlets.FooterViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+<!-- Move breadcrumbs  --> 
+    <!-- The breadcrumbs -->
+    <browser:viewlet
+        name="plonetheme.ohr.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IContentViews"
+        class=".viewlets.PathBarViewlet"
+        template="templates/path_bar.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
 
 </configure>

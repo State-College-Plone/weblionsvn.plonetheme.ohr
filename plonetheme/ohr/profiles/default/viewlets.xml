@@ -1,4 +1,42 @@
 <?xml version="1.0"?>
 <object>
+  <order manager="plone.portaltop" skinname="OHR Theme">
+  <viewlet name="plone.header"/>
+  <viewlet name="plonetheme.ohr.global_sections" insert-after="plone.header "/>
+  <viewlet name="plone.app.i18n.locales.languageselector"/>
+</order>
+
+ <order manager="plone.portalheader" skinname="OHR Theme">
+  <viewlet name="plone.skip_links"/>
+  <viewlet name="plonetheme.ohr.site_actions"/>
+  <viewlet name="plone.searchbox"/>
+  <viewlet name="plone.logo"/>
+  <viewlet name="plonetheme.ohr.personal_bar" insert-after="*"/>
+ </order>
+
+  <order manager="plone.portalfooter" skinname="OHR Theme" >
+      <viewlet name="plonetheme.ohr.footer" />
+      
+  </order>
+ <order manager="plone.contentviews" skinname="OHR Theme">
+     <viewlet name="plonetheme.ohr.path_bar"/>
+     <viewlet name="plone.contentviews"/>
+     <viewlet name="plone.contentactions"/>
+ </order>
+ 
+ <hidden manager="plone.portalfooter" skinname="OHR Theme">
+    <viewlet name="plone.footer"/>
+    <viewlet name="plone.colophon"/> 
+    <viewlet name="plonetheme.ohr.colophon" />
+ </hidden>
+ 
+  <hidden manager="plone.portalheader" skinname="OHR Theme">
+      <viewlet name="plone.site_actions"/>
+  </hidden>
+  
+  <hidden manager="plone.portaltop" skinname="OHR Theme">
+      <viewlet name="plone.personal_bar"/>
+      <viewlet name="plone.global_sections"/>
+   </hidden>
 
 </object>

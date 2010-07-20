@@ -1,0 +1,15 @@
+<div id="portal-colophon" metal:define-macro="colophon" i18n:domain="plone">
+<a href="http://www.psu.edu/ur/legal.html" title="Official statements on privacy, nondiscrimination, equal opportunity and copyright.">Privacy and Legal Statements</a> | <a href="" tal:attributes="href context/contact-info/absolute_url">Contact</a>  <tal:comment tal:condition="nothing">If there is no webmaster email address don't show</tal:comment>
+   <span tal:define="mailt  context/email_from_address"
+             tal:condition="context/email_from_address">
+  | Contact the <a tal:attributes="href string:mailto:${mailt}"  
+            title="Contact the web administrator" 
+            tal:content="context/email_from_name">webmaster</a> | 
+  </span>
+
+    <br />
+<p><a href="http://www.psu.edu/" title="Penn State home page.">The Pennsylvania State University</a> Copyright &copy;<span tal:omit-tag="" tal:define="now modules/DateTime/DateTime" tal:content="now/year" /> All Rights Reserved </p>
+
+<a href="http://weblion.psu.edu" class="colophonIcon colophonIconWebLion" title="This Plone site was built in partnership with the WebLion Project at Pennsylvania State University. Click for more information."><img src="" tal:replace="structure context/weblion_partner.png/tag" /></a>
+
+</div>
