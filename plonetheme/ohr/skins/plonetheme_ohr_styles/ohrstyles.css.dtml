@@ -34,6 +34,8 @@ margin:1em 0 6em 2em;
     border-radius: 10px;
     padding: 5px;
     margin-top: 15px;
+	behavior: url(&dtml-portal_url;/PIE.htc); 
+	position: relative;
 }
 
 #portal-personaltools {
@@ -76,6 +78,12 @@ margin:1em 0 6em 2em;
     background-image: url(globalnavbg.png);
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFFEFE), to(#C2C2CA));
 	background: -moz-linear-gradient(top,  #FFFEFE,  #C2C2CA);
+	/* This lets IE know to call the script on all elements which get the 'box' class */
+
+	behavior: url(&dtml-portal_url;/PIE.htc); 
+	position: relative;
+
+
 }
 
 #portal-globalnav ul {
