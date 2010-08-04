@@ -224,7 +224,7 @@ h1 {
 
 
 /* *** SECTION CURRENT EMPLOYESS *** */
-.section-current-employees .portletHeader {
+.section-benefits .portletHeader {
     background-color: &dtml-currentEmployeesMainColor;;
 	background: -webkit-gradient(linear, left top, left bottom, from(&dtml-currentEmployeesSecondaryColor;), to(&dtml-currentEmployeesMainColor;));
 	background: -moz-linear-gradient(top,  &dtml-currentEmployeesSecondaryColor;,  &dtml-currentEmployeesMainColor;);
@@ -232,11 +232,11 @@ h1 {
 	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-currentEmployeesSecondaryColor;', endColorstr='&dtml-currentEmployeesMainColor;'); /* ie8 */
 }
 
-.section-current-employees .portletNavigationTree .portletTopLeft {
+.section-benefits .portletNavigationTree .portletTopLeft {
 	 border-top: 10px solid &dtml-currentEmployeesMainColor;;
  }
 
-.section-current-employees h1 {
+.section-benefits h1, .section-benefits h2  {
     color: &dtml-currentEmployeesMainColor;;
     border-bottom: 1px solid &dtml-currentEmployeesMainColor;;
 }
