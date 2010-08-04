@@ -49,3 +49,5 @@ HRProfessionalsMainColor:string=#420085
 HRProfessionalsSecondaryColor:string=#B094CC
 currentEmployeesMainColor:string=#428500
 currentEmployeesSecondaryColor:string=#C6DAB2
+contentFontFamily:string="Georgia", Georgia, serif
+navigationFontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
