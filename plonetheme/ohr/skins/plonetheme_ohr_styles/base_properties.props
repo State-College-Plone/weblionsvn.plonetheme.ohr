@@ -31,7 +31,7 @@ contentViewFontColor:string=#578308
 
 inputFontColor:string=Black
 
-textTransform:string=lowercase
+textTransform:string=capitalize
 
 evenRowBackgroundColor:string=#eef3f5 
 oddRowBackgroundColor:string=transparent
@@ -43,5 +43,9 @@ discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
 portalMinWidth:string=70em
-columnOneWidth:string=16em
+columnOneWidth:string=248px
 columnTwoWidth:string=16em
+HRProfessionalsMainColor:string=#420085
+HRProfessionalsSecondaryColor:string=#B094CC
+currentEmployeesMainColor:string=#428500
+currentEmployeesSecondaryColor:string=#C6DAB2

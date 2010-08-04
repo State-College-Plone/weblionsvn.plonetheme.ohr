@@ -1,4 +1,6 @@
 [default]
-alt = Penn State
 title = Penn State
+alt = Penn State
 cache = HTTPCache
+
+
