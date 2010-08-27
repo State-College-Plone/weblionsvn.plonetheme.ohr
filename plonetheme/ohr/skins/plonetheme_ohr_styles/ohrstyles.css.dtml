@@ -157,6 +157,12 @@ margin:1em 0 6em 2em;
 	position: relative; 
 }
 
+#portal-columns {
+    margin-top: -3px;
+}
+#portal-column-one {
+    margin-top: -6px;
+}
 
 #portal-breadcrumbs {
     border: none;
@@ -172,7 +178,7 @@ margin:1em 0 6em 2em;
     border: none;
     border-top: 8px solid #898989;
     color: white;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 
 #portal-footer a, #portal-footer a:visited {
@@ -180,12 +186,15 @@ margin:1em 0 6em 2em;
 }
 
 #portal-column-one .visualPadding {
-padding:2em 5px 1em 0;
+padding:0px 5px 1em 0;
 }
 .portletItem, .portlet {
  border: none;   
 }
 
+.portletNavigationTree {
+    margin-top: 2em;
+}
 /* ********* SECTION COLORS **************** */
 .portletNavigationTree .portletHeader,  .portletNavigationTree .managedPortlet .portletHeader {
 	-o-box-shadow: 0 3px 6px rgba(58,58,58,.7);
@@ -202,7 +211,13 @@ padding:2em 5px 1em 0;
 	behavior: url(&dtml-portal_url;/PIE.htc); 
 	position: relative; 
 	border: none; 
-	margin-left: -17px;
+	margin-left: -19px;
+	/* give it a generic color in case not set below */
+	    background-color: &dtml-HRProfessionalsMainColor;;
+	background: -webkit-gradient(linear, left top, left bottom, from(&dtml-HRProfessionalsSecondaryColor;), to(&dtml-HRProfessionalsMainColor;));
+	background: -moz-linear-gradient(top,  &dtml-HRProfessionalsSecondaryColor;,  &dtml-HRProfessionalsMainColor;);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-HRProfessionalsSecondaryColor;', endColorstr='&dtml-HRProfessionalsMainColor;'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-HRProfessionalsSecondaryColor;', endColorstr='&dtml-HRProfessionalsMainColor;'); /* ie8 */
 }
 .portletNavigationTree .portletHeader a, .portletNavigationTree .managedPortlet .portletHeader a {
     color: white;
@@ -221,7 +236,7 @@ padding:2em 5px 1em 0;
 	 top: 100%;
 	 left: 0;
 	 position: absolute;
-	 
+	 border-top: 10px solid &dtml-HRProfessionalsMainColor;; /* give it a generic color in case it isn't defined below */
 }
 
 h1 {
