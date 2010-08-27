@@ -32,11 +32,12 @@
  
   <hidden manager="plone.portalheader" skinname="OHR Theme">
       <viewlet name="plone.site_actions"/>
+      <viewlet name="plone.global_sections"/>
   </hidden>
   
   <hidden manager="plone.portaltop" skinname="OHR Theme">
       <viewlet name="plone.personal_bar"/>
-      <viewlet name="plone.global_sections"/>
+      <viewlet name="plone.path_bar"/>
    </hidden>
 
 </object>

@@ -11,6 +11,14 @@
   float:left;
   width: <dtml-var columnOneWidth missing="16em">;
   padding: 0;
+  border-width: 5px;
+  -o-border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+  -icab-border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+  -khtml-border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+  -moz-border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+  -webkit-border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+  border-image: url(&dtml-portal_url;/inner-portlet-border.png) 0 248 0 0 stretch;
+
 }
 
 #portal-column-content {

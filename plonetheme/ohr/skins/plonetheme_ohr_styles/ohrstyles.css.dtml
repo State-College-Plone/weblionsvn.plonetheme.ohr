@@ -5,6 +5,11 @@ body {
     background-color: #F2F2F3;
 }
 
+#visual-portal-wrapper {
+    /* need to hide the box-shadow from global-nav so that the page doesn't over flow. So since visual-portal
+    wrapper is the outside container of global-nav we can do this */
+    overflow: hidden;
+}
 #portal-header, #portal-columns, #portal-personaltools-wrapper, #portal-globalnav ul  {
     width: 960px;
     margin: 0 auto;
@@ -50,9 +55,17 @@ margin:1em 0 6em 2em;
 #portal-columns {
    background-color: white;
    padding-bottom: 25px;
-   margin-top: 5px;
-   border-left: 1px solid #999;
-   border-right: 1px solid #999;
+   margin-top: 0px;
+/*   border-left: 1px solid #999;
+   border-right: 1px solid #999; */
+   border-width: 5px;
+   	-o-border-image: url(&dtml-portal_url;/shadow.png) 0 960 repeat;
+	-icab-border-image: url(&dtml-portal_url;/shadow.png) 0 960 repeat;
+	-khtml-border-image: url(&dtml-portal_url;/shadow.png) 0 960 repeat;
+	-moz-border-image: url(&dtml-portal_url;/shadow.png)  0 964 repeat;
+	-webkit-border-image: url(&dtml-portal_url;/shadow.png) 0 960 repeat;
+	border-image: url(&dtml-portal_url;/shadow.png) 0 960 repeat;
+
 }
 
 #portal-top, #portal-footer {
@@ -73,7 +86,7 @@ margin:1em 0 6em 2em;
     -moz-box-shadow: 0 3px 10px rgba(58,58,58,.7);
     -webkit-box-shadow: 0 3px 6px rgba(58,58,58,.7);
     box-shadow: 0 3px 6px rgba(58,58,58,.7);
-    background: #C2C2CA;
+   background: #C2C2CA;
     background-image: url(globalnavbg.png);
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFFEFE), to(#C2C2CA));
 	background: -moz-linear-gradient(top,  #FFFEFE,  #C2C2CA);
@@ -81,7 +94,17 @@ margin:1em 0 6em 2em;
 	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFEFE', endColorstr='#C2C2CA'); /* ie8 */
 	/* This lets IE know to call the script on all elements which get the 'box' class */
 	behavior: url(&dtml-portal_url;/PIE.htc); 
-	position: relative; 
+	position: relative;
+/* Trying to get border-image to work since box-shadow leaves a scroll bar left to right
+	border-width: 0 0 4 0;
+	 	-o-border-image: url(&dtml-portal_url;/shadow.png) 4 stretch;
+	-icab-border-image: url(&dtml-portal_url;/shadow.png) 4 stretch;
+	-khtml-border-image: url(&dtml-portal_url;/shadow.png) 4 stretch;
+	-moz-border-image: url(&dtml-portal_url;/shadow.png) 4 round;
+	-webkit-border-image: url(&dtml-portal_url;/shadow.png) 4 stretch;
+	border-image: url(&dtml-portal_url;/shadow.png) 4 stretch;
+ */
+
 }
 
 #portal-globalnav ul {
@@ -157,7 +180,7 @@ margin:1em 0 6em 2em;
 }
 
 #portal-column-one .visualPadding {
-padding:2em 0 1em 0;
+padding:2em 5px 1em 0;
 }
 .portletItem, .portlet {
  border: none;   
@@ -179,7 +202,7 @@ padding:2em 0 1em 0;
 	behavior: url(&dtml-portal_url;/PIE.htc); 
 	position: relative; 
 	border: none; 
-	margin-left: -20px;
+	margin-left: -17px;
 }
 .portletNavigationTree .portletHeader a, .portletNavigationTree .managedPortlet .portletHeader a {
     color: white;
@@ -194,8 +217,8 @@ padding:2em 0 1em 0;
      width: 0; 
      height: 0;
 	 line-height: 0;
-	 border-left: 20px solid transparent;
-	 top: 104%;
+	 border-left: 14px solid transparent;
+	 top: 100%;
 	 left: 0;
 	 position: absolute;
 	 
