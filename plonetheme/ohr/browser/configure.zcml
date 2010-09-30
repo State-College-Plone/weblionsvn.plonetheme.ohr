@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plonetheme.ohr">
 
     <!-- 'OHR Theme' Zope 3 browser layer -->
@@ -72,6 +73,14 @@
         template="templates/path_bar.pt"
         layer=".interfaces.IThemeSpecific"
         permission="zope2.View"
+        />
+
+
+    <include package="plone.app.portlets" />
+
+    <plone:portletRenderer
+        portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
+        class=".navigation.MyRenderer"
         />
 
 </configure>

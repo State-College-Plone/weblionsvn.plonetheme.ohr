@@ -31,7 +31,6 @@ plonetheme/ohr/browser/viewlets.py
 plonetheme/ohr/browser/images/README.txt
 plonetheme/ohr/browser/stylesheets/README.txt
 plonetheme/ohr/browser/stylesheets/main.css
-plonetheme/ohr/browser/templates/.DS_Store
 plonetheme/ohr/browser/templates/colophon.pt
 plonetheme/ohr/browser/templates/footer.pt
 plonetheme/ohr/browser/templates/global_sections.pt
@@ -43,13 +42,15 @@ plonetheme/ohr/profiles/default/import_steps.xml
 plonetheme/ohr/profiles/default/jsregistry.xml
 plonetheme/ohr/profiles/default/metadata.xml
 plonetheme/ohr/profiles/default/plonetheme.ohr_various.txt
+plonetheme/ohr/profiles/default/propertiestool.xml
 plonetheme/ohr/profiles/default/skins.xml
 plonetheme/ohr/profiles/default/viewlets.xml
-plonetheme/ohr/skins/.DS_Store
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/CONTENT.txt
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/globalnavbg.png
+plonetheme/ohr/skins/plonetheme_ohr_custom_images/inner-portlet-border.png
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/psulogo.png
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/psulogo.png.metadata
+plonetheme/ohr/skins/plonetheme_ohr_custom_images/shadow.png
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/unitlogo.png
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/unitlogo.png.metadata
 plonetheme/ohr/skins/plonetheme_ohr_custom_images/weblion_partner.png
@@ -57,7 +58,6 @@ plonetheme/ohr/skins/plonetheme_ohr_custom_images/weblion_partner.png.metadata
 plonetheme/ohr/skins/plonetheme_ohr_custom_templates/CONTENT.txt
 plonetheme/ohr/skins/plonetheme_ohr_custom_templates/main_template.pt
 plonetheme/ohr/skins/plonetheme_ohr_custom_templates/portlet_prefs.pt
-plonetheme/ohr/skins/plonetheme_ohr_styles/.DS_Store
 plonetheme/ohr/skins/plonetheme_ohr_styles/CONTENT.txt
 plonetheme/ohr/skins/plonetheme_ohr_styles/IEFixes.css.dtml
 plonetheme/ohr/skins/plonetheme_ohr_styles/IEFixes.css.dtml.metadata
